@@ -1,5 +1,7 @@
 # Flow control
 
+![flow](/go-training-beginner/modulo-1/4-flow_control/img/flow.png)
+
 ## if/else
 
 Funciona igual que en cualquier otro lenguaje, con el detalle que la expresión no necesita los `()`

@@ -1,5 +1,7 @@
 # Hello world 
 
+![setup](/go-training-beginner/modulo-1/1-hello_world/img/init.webp)
+
 Empecemos escribiendo nuestro "hello world" 🥱. 
 
 Primero vamos a inicializar un modulo ( *module* ). Para eso podemos usar el comando `go mod`

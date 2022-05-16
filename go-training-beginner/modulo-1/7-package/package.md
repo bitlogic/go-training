@@ -1,5 +1,7 @@
 # Package
 
+![package](/go-training-beginner/modulo-1/7-package/img/package.png)
+
 Un paquete es un un directorio que contiene uno o mas archivos fuentes de Go u otros paquetes de Go
 
 Esto quiere decir que cada  archivo de código de Go, ejemplo `name.go`, debe pertenecer a un paquete, y la declaración de ese paquete se realiza al comienzo de ese archivo.

@@ -1,8 +1,9 @@
 # Modules
 
+![mod](/go-training-beginner/modulo-1/6-modules/img/mod.png)
 ### Module, que son?
 
-una definición simple es que un modulo (module) es una colección de paquetes almacenados en un archivo `go.mod` en la raíz del proyecto, siempre que este este afuera de `$GOPATH/src`
+Una definición simple es que un modulo (module) es una colección de paquetes almacenados en un archivo `go.mod` en la raíz del proyecto, siempre que este este afuera de `$GOPATH/src`
 
 A partir de la versión 1.13 de Go, go.mod o el trabajo con módulos es la forma predeterminada de trabajo. Antes debíamos activarlo mediante la variable `GO111MODULE=on`.
 
@@ -14,7 +15,7 @@ A partir de la versión 1.13 de Go, go.mod o el trabajo con módulos es la forma
 - **pkg**: Contiene los paquetes compilados.
 - **bin**: Contiene los binarios y los ejecutables
 
-![gopath](/go-training-beginner/modulo-1/6-modules/gopath.png)
+![gopath](/go-training-beginner/modulo-1/6-modules/img/gopath.png)
 
 ### Nuevo proyecto, nuevo go.mod
 

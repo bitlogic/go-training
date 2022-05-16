@@ -1,5 +1,6 @@
 # Functions
 
+![func](/go-training-beginner/modulo-1/5-functions/img/func.png)
 ## Declaración y ejecución simple
 
 ***Declaración***
@@ -33,7 +34,8 @@ func myFunction(p1 string) {
 ## Devolviendo valores
 
 Podemos devolver un valor
-```go func main() {
+```go 
+func main() {
 	s := myFunction("Hello")
 	fmt.Println(s)
 }

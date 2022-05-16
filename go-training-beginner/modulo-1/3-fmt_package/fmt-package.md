@@ -1,5 +1,7 @@
 # fmt package
 
+![fmt](/go-training-beginner/modulo-1/3-fmt_package/img/fmt.png)
+
 fmt package tiene un montón de funciones dentro pero ahora nos vamos a centrar en las funciones que se usan con mas frecuencias. Como `fmt.Print`.
 
 ```go

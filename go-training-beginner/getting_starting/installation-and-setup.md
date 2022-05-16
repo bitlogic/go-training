@@ -1,5 +1,7 @@
 # Installation and Setup
 
+![setup](/go-training-beginner/getting_starting/img/beginners.png)
+
 ## Descarga
 
 Para empezar descargamos Go desde la sección de [descarga](https://go.dev/dl/) de la web oficial de Go.

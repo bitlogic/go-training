@@ -1,5 +1,7 @@
 # Variables y data types
 
+![setup](/go-training-beginner/modulo-1/2-variables_and_data_types/img/setup.png)
+
 Vamos a aprender muy rápidamente sobre variables y los diferentes data types que nos provee Go
 
 ## Variables
@@ -126,7 +128,7 @@ var bio string = `I am boring.
 
 	|           |     |      |           |     |      |
 	| --------- | --- | ---- | --------- | --- | ---- |
-	| Aritmeticos   | + | - | * | / | %| 
+	| Aritméticos   | + | - | * | / | %| 
 	| Comparación   | ==  | !=  | > |< |<= |>=
 	| Incremento/decremento  | ++  | -- |
 	| Asignación    | +=  | -=  | *= | /= | %= |
