@@ -57,7 +57,7 @@ My name is golang
 
 Lo nuevo que vemos es `%s` que es reemplazado por `name`.
 
->Que significa `%s`? Se llaman verbos de anotación y le indican a la función cómo formatear los argumentos. Podemos controlar cosas como el ancho, los tipos y la precisión, entre otras cosas y hay muchos de estos verbos. Dejo este [link](https://pkg.go.dev/fmt) a la documentación para ver la lista completa
+>Qué significa `%s`? Se llaman verbos de anotación y le indican a la función cómo formatear los argumentos. Podemos controlar cosas como el ancho, los tipos y la precisión, entre otras cosas y hay muchos de estos verbos. Dejo este [link](https://pkg.go.dev/fmt) a la documentación para ver la lista completa
 
 Veamos alguno ejemplos.
 

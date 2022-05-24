@@ -1,10 +1,10 @@
 # Pointers (Punteros)
 
-## Que es un pointer?
+## ¿Qué es un puntero (pointer)?
 
 La definición simple es *un puntero es una variable que es usada para guardar la dirección de memoria de otra variable*.
 
-![pointer](/go-training-beginner/modulo-2/1-pointers/pointers.png)
+![pointer](/go-training-beginner/modulo-2/1-pointers/img/pointers.png)
 
 ### Declaración de punteros
 
@@ -33,7 +33,7 @@ $ go run main.go
 nil
 ```
 
->Que es `nil`? representa el **zero value** para tipos de datos como punteros, interfaces, channels, maps y slices. Que son tipos de datos que veremos mas adelante.
+>¿Qué es `nil`? representa el **zero value** para tipos de datos como punteros, interfaces, channels, maps y slices. Que son tipos de datos que veremos mas adelante.
 Para recordar con un ejemplo, el zero value de un `int` es un 0, el de un `bool` false... bueno para un puntero es `nil`.
 
 Ahora asignemos un valor a un puntero.
