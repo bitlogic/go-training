@@ -225,6 +225,8 @@ func main() {
 }
 ```
 ```cmd
+go run slices.go
+
 [Mon Tue Wed Thu Fri Sat Sun]
 [Mon Tue]
 [Sun Tue]

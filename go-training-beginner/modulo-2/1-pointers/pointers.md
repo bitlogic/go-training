@@ -6,7 +6,7 @@ La definición simple es *un puntero es una variable que es usada para guardar l
 
 ![pointer](/go-training-beginner/modulo-2/1-pointers/img/pointers.png)
 
-### Declaración de punteros
+## Declaración de punteros
 
 ```go
 var p *T
@@ -28,13 +28,12 @@ func main() {
 }
 ```
 ```cmd
-$ go run main.go
+$ go run pointer.go
 
 nil
 ```
 
->¿Qué es `nil`? representa el **zero value** para tipos de datos como punteros, interfaces, channels, maps y slices. Que son tipos de datos que veremos mas adelante.
-Para recordar con un ejemplo, el zero value de un `int` es un 0, el de un `bool` false... bueno para un puntero es `nil`.
+>¿Qué es `nil`? representa el **zero value** para tipos de datos como punteros, interfaces, channels, maps y slices. Que son tipos de datos que veremos mas adelante. Para recordar con un ejemplo, el zero value de un `int` es un 0, el de un `bool` false... bueno para un puntero es `nil`.
 
 Ahora asignemos un valor a un puntero.
 
@@ -46,19 +45,20 @@ import "fmt"
 func main() {
 	a := 10
 
-	var p *int = &a
+	var p1 *int = &a
 
-	fmt.Println("address:", p)
+	fmt.Println("address p1:", p1)
 }
 ```
 
 Usamos `&` para hacer referencia a la dirección de memoria donde esta guardada la variable.
 
 ```cmd
-$ go run main.go
+$ go run pointer.go
 
 0xc0000b8000
 ```
+>Nota: la dirección de memoria será distinta en cada ejecución
 
 El resultado nos da la dirección de memoria donde esta guardada la variable `a`.
 
@@ -70,15 +70,15 @@ package main
 import "fmt"
 
 func main() {
-	p := new(int)
-	*p = 100
+	p2 := new(int)
+	*p2 = 100
 
-	fmt.Println("value", *p)
-	fmt.Println("address", p)
+	fmt.Println("value:", *p2)
+	fmt.Println("address p3:", p2)
 }
 ```
 ```cmd
-$ go run main.go
+$ go run pointer.go
 
 value 100
 address 0xc000018030
@@ -86,7 +86,7 @@ address 0xc000018030
 
 ### `*` operador de desreferencia
 
-Ahora nuestra variable puntero `p` tiene guardada la dirección de memoria donde se encuentra la variable `a`.
+Ahora nuestra variable puntero `p1` tiene guardada la dirección de memoria donde se encuentra la variable `a1`.
 Si queremos obtener el valor que se encuentra dentro de esa dirección de memoria (es decir el valor de `a`) usamos el operador `*`
 
 ```go
@@ -105,7 +105,7 @@ func main() {
 ```
 
 ```cmd
-$ go run main.go
+$ go run pointer.go
 
 address: 0xc000018030
 value: 10
@@ -120,18 +120,18 @@ import "fmt"
 func main() {
 	a := 10
 
-	var p *int = &a
+	var p1 *int = &a
 
 	fmt.Println("before", a)
-	fmt.Println("address:", p)
+	fmt.Println("address :", p1)
 
 	*p = 20
 	fmt.Println("after:", a)
-    fmt.Println("address:", p)
+    fmt.Println("address p1:", p1)
 }
 ```
 ```cmd
-$ go run main.go
+$ go run pointer.go
 
 before 10
 address: 0xc000192000
@@ -142,12 +142,12 @@ address: 0xc000192000
 
 >Algo importante es notar como se usa `*` tanto para definir el puntero (`var p *int`) como para desreferenciarlos `*p`. Debemos entender esa diferencia.
 
-### Punteros en argumentos de funciones
+## Punteros en argumentos de funciones
 
 Recordando las definiciones de pasar valores *por valor* y por *referencia*. Go maneja el mismo concepto y podemos pasar argumentos por referencia como sigue.
 
 ```go
-myFunction(&a)
+myFunction(&a) // or myFunction(p)
 ...
 
 func myFunction(ptr *int) {}

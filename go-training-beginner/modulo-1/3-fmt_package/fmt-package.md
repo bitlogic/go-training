@@ -63,7 +63,7 @@ Veamos alguno ejemplos.
 
 ```go
 ...
-percent := (3/5) * 100
+percent := 10.0 / 3.0
 
 fmt.Printf("%f", percent)
 ...
@@ -72,14 +72,14 @@ fmt.Printf("%f", percent)
 ```cmd
 $ go run main.go
 
-58.181818
+3.333333
 ```
 
 Si quisiéramos una precisión de 2 decimales y agregar el signo de porcentaje, podemos formatear de la siguiente manera
 
 ```go
 ...
-percent := (3/5) * 100
+percent := 10.0 / 3.0
 
 fmt.Printf("%.2f %%", percent)
 ...
@@ -88,7 +88,7 @@ fmt.Printf("%.2f %%", percent)
 ```cmd 
 $ go run main.go
 
-58.18 %
+33.33 %
 ```
 
 Notemos el uso de `.2f` y el `%` para "escapear" del formato
