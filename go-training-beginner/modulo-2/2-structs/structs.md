@@ -1,6 +1,6 @@
 # Structs
 
-![structs](/go-training-beginner/modulo-2/structs/img/structs.png)
+![structs](/go-training-beginner/modulo-2/2-structs/img/structs.png)
 
 ## ¿Qué es una estructura (struct)?
 
