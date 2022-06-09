@@ -101,14 +101,11 @@ Esta *longitud o capacidad* del buffer se puede especificar mediante el segundo 
 func main() {
 	ch := make(chan string, 2)
 
-	go speak("Hello World", ch)
-	go speak("Hi again", ch)
+	ch <- "Hello World"
+	ch <- "Hi again"
 
-	data1 := <-ch
-	fmt.Println(data1)
-
-	data2 := <-ch
-	fmt.Println(data2)
+	fmt.Println(<-ch)
+	fmt.Println(<-ch)
 }
 ```
 
